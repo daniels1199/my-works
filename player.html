@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Video Player</title>
+	<link rel="stylesheet" href="style.css"/>
+	<script src="script.js"></script>
+</head>
+<body oncontextmenu="return false">
+	<div class="player-video" onmouseover="prepare(this)">
+		<video class="video-view" onmouseout="control2()" ondblclick="fullS()">
+			<source src="_media/video.mp4">
+		</video>
+		<div id ="vid" class="video-controls" onmouseover="control()" ondblclick="control2()">
+			<div class="video-progress-bar float-left">
+				<div class="video-loader"></div>
+				<div class="video-progress"></div>
+			</div>
+
+			<div class="video-play float-left video-btn"></div>
+			<div class="video-volume float-left video-btn"></div>
+			
+			<div class="slider float-left">
+				<div class="slider-vol"></div>
+			</div>
+			
+			<div class="video-time float-left">00:00 | 00:00</div>
+			<div class="video-screen float-right video-btn"
+			></div>
+		</div>	
+		<div class="clear"></div>
+	</div>		
+</body>
+</html>
